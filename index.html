@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" type="image/x-icon" href="./assets/—Pngtree—bd letter 3d circle logo_4985559.png">
+  <script src="./scripts/script.js" defer></script>
+  <title>Portfolio</title>
+</head>
+<body>
+  <!--nav-->
+  <div>
+    <div class="navbar-placeholder"></div>
+    <nav class="navbar flex">
+      <a href="#home"><img src="./assets/—Pngtree—bd letter 3d circle logo_4985559.png" alt="logo" class="animation"></a>
+      <i class="fa-solid fa-bars animation"></i>
+      <div class="nav-menu flex">
+        <i class="fa-solid fa-x animation"></i>
+        <a href="#home" class="animation">Home</a>
+        <a href="#about" class="animation">About</a>
+        <a href="#work" class="animation">Projects</a>
+        <a href="#contact" class="animation">Contact</a>
+      </div>
+      <a href="#contact" class="btn nav-btn animation">Contact</a>
+    </nav>
+  </div>
+
+  <!--hero-->
+  <div class="hero flex" id="home">
+    <img src="./assets/Hero Image.jpg" alt="web dev">
+    <h1><span class="text-effect">Hello World, I'm Besu Desta</span><br>A student at Virginia Commonwealth University</h1>
+    <a href="./assets/Resume (3).pdf" class="hero-resume animation" target="_blank" rel="noopener noreferrer">Resume</a>
+  </div>
+
+  <!--about-->
+  <section class="container flex" id="about">
+    <div class="container-title-about">
+      <h2>About Me</h2>
+      <img src="./assets/pngegg.png" alt="decoration">
+    </div>
+    <div class="about-sections flex">
+      <div class="about-right flex">
+        <div class="about-text-container">
+        <p>I’m currently a Sophomore at Virginia Commonwealth University pursuing a B.S. in Computer Science, where I have maintained a GPA of 3.7. 
+          Right now, I’m focusing on honing my web development skills. Outside of academics, I work as a Residential Assistant, which has given me the chance to develop leadership and interpersonal skills while helping first-year students adjust to college life.
+          Looking ahead, I’m excited to apply my skills in a software engineering internship where I can work on challenging problems and grow as a developer. I’m particularly interested in full-stack development and API design, and I’m eager to contribute to real-world projects while learning from experienced professionals in the field.
+          I believe this internship would be a great opportunity to further my career in software engineering and make meaningful contributions to a dynamic team.
+        </p>
+      </div>
+      </div>
+    </div>
+    <div class="about-skills">
+      <div>
+        <h3>Technical Skills</h3>
+        <div class="about-skill flex animation">
+          <p>HTML & CSS</p>
+          <hr style="width: 100%">
+        </div>
+        <div class="about-skill flex animation">
+          <p>JAVA</p>
+          <hr style="width: 90%">
+        </div>
+        <div class="about-skill flex animation">
+          <p>Python</p>
+          <hr style="width: 70%">
+        </div>
+        <div class="about-skill flex animation">
+          <p>JavaScript</p>
+          <hr style="width: 60%">
+        </div>
+        <div class="about-skill flex animation">
+          <p>Flask & Next.js</p>
+          <hr style="width: 50%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--work-->
+  <main class="container flex" id="work">
+    <div class="container-title">
+      <h2>Projects</h2>
+      <img src="./assets/pngegg.png" alt="decoration">
+    </div>
+    <div class="grid-container">
+      <div>
+          <h4 class="work-name">Website</h4>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <figure>
+              <img src="./assets/Work-ex1.png" alt="work ex" class="animation">
+              
+            </figure>
+          </a>  
+      </div>
+      <div>
+        <h4 class="work-name">Math Expression Parser</h4>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <figure>
+            <img src="./assets/Work-ex2.png" alt="work ex" class="animation">
+        </figure>
+        </a>  
+    </div>
+    </div>
+  </main>
+
+  <!--contact-->
+  <section class="container flex" id="contact">
+    <div class="container-title">
+      <h2>Contact</h2>
+      <img src="./assets/pngegg.png" alt="decoration">
+    </div>
+    <div class="contact-section flex">
+      <div class="contact-left flex">
+        <h2 class="text-effect">Let's Talk</h2>
+        <p>Contact me about employment or projects</p>
+        <div class="contact-details flex">
+          <div class="contact-detail felx">
+            <i class="fa-solid fa-envelope"></i>
+            <p>20besu18@gmail.com</p>
+          </div>
+          <div class="contact-detail felx">
+            <i class="fa-solid fa-phone"></i>
+            <p>(571) 494-9146</p>
+          </div>
+          <div class="contact-detail felx">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>USA Richmond, VA</p>
+          </div>
+        </div>
+      </div>
+      <form action="https://formsubmit.co/20besu18@gmail.com" method="POST" class="contact-right flex">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="email">Your Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter your Email">
+        <label for="message">Enter a message</label>
+        <textarea name="message" id="message" placeholder="Leave a message"></textarea>
+
+        <button type="submit" class="btn animation">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="flex">
+    <div class="footer-top flex">
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p>@Besu Desta. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
