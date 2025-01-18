@@ -38,6 +38,7 @@ body {
 .flex {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .text-effect {
@@ -49,7 +50,7 @@ body {
 }
 
 .container {
-  flex-direction: column;
+  display: flex;
   justify-content: center;
   gap: 4rem;
   margin: 4rem 10rem 10rem;
@@ -85,10 +86,14 @@ body {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  min-height: 7rem;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
   gap: 3rem;
+}
+
+.grid-container > div {
+  flex: 1 1 calc(50% - 3rem); /* Adjust width to allow two items per row with gap */
+  box-sizing: border-box;
 }
 
 .grid-container img {
@@ -100,6 +105,12 @@ body {
 }
 .grid-container a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .grid-container > div {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
 }
 
 figure {
