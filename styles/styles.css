@@ -33,6 +33,7 @@ body {
 
 .animation:hover {
   transform: scale(1.01);
+  box-shadow: 0 0 30px lightblue;
 }
 
 .flex {
@@ -83,7 +84,7 @@ body {
   display: block;
   margin: 0 auto; /* Center the image horizontally */
   width: 15rem;
-}
+} 
 
 .grid-container {
   display: flex;
