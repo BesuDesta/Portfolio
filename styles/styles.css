@@ -152,6 +152,10 @@ figcaption {
   max-width: 100rem;
 }
 
+.navbar :hover img {
+  color: lightblue;
+}
+
 .navbar img:nth-child(1) {
   width: 3rem;
   padding-left: 6.5rem;
