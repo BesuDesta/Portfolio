@@ -65,6 +65,8 @@ body {
 }
 
 .container-title {
+  display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
 }
@@ -78,7 +80,8 @@ body {
 .container-title-about img{
   position: absolute;
   justify-content: center;
-  width: 15rem;
+  width: 15rem; 
+  padding-top: -5rem;
 }
 
 .container-title h2{
@@ -90,27 +93,23 @@ body {
 .container-title img {
   display: block;
   margin: 0 auto; /* Center the image horizontally */
-  width: 15rem;
+  width: 10rem;
 } 
 
-.work-img :hover {
-  box-shadow: 0 0 20px lightblue;
-}
 
 .grid-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping */
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+  gap: 3rem; /* Space between grid items */
 }
 
 .grid-container > div {
-  flex: 1 1 calc(50% - 3rem); /* Adjust width to allow two items per row with gap */
   box-sizing: border-box;
 }
 
 .grid-container img {
-  box-sizing: border-box;
-  width: 100%;
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 0.5rem;
   border-style: solid;
   border-color: gray;
@@ -120,8 +119,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .grid-container > div {
-    flex: 1 1 100%; /* Full width on smaller screens */
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
   }
 }
 
@@ -289,10 +288,26 @@ figcaption {
 }
 
 /* work */
-work-name {
-  font-size: 1.5 rem;
-  padding-bottom: 1.5rem;
+.work-name {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
 }
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.work-image {
+  width: 200px;
+  height: auto;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: gray;
+}
+
 
 /* contact */
 .contact-section {
