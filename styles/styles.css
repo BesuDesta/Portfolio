@@ -99,21 +99,17 @@ body {
 
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
-  gap: 3rem; /* Space between grid items */
-}
-
-.grid-container > div {
-  box-sizing: border-box;
+  gap: 3rem;
 }
 
 .grid-container img {
-  width: 100%; /* Ensure the image takes up the full width of its container */
+  width: 70%; /* Ensure the image takes up the full width of its container */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0.5rem;
   border-style: solid;
   border-color: gray;
+  margin: 0 auto;
+  display: block;
 }
 .grid-container a {
   text-decoration: none;
